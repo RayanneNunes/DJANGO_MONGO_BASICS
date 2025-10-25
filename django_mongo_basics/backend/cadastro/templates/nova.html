@@ -1,0 +1,15 @@
+<h1>Nova Pessoa</h1> 
+
+<form method="POST"> 
+
+    {% csrf_token %} 
+
+    Nome: <input name="nome"><br> 
+
+    Email: <input name="email"><br> 
+
+    <button type="submit">Salvar</button> 
+
+</form> 
+
+<a href="{% url 'lista' %}">Voltar</a> 

@@ -1,0 +1,17 @@
+<h1>Pessoas</h1> 
+
+<a href="{% url 'nova' %}">Adicionar Pessoa</a> 
+
+<ul> 
+
+    {% for pessoa in pessoas %} 
+
+        <li>{{ pessoa.nome }} - {{ pessoa.email }}</li> 
+
+    {% empty %} 
+
+        <li>Nenhuma pessoa cadastrada.</li> 
+
+    {% endfor %} 
+
+</ul> 
